@@ -77,6 +77,10 @@ services:
          - SERVER_DESCRIPTION=palworld-server-docker by Thijs van Loef
       volumes:
          - ./palworld:/palworld/
+
+      
+volumes:
+  palworld_data:
 ```
 
 As an alternative, you can copy the [.env.example](.env.example) file to a new file called **.env** file.
@@ -97,6 +101,10 @@ services:
          -  .env
       volumes:
          - ./palworld:/palworld/
+
+      
+volumes:
+  palworld_data:
 ```
 
 ### Docker Run
